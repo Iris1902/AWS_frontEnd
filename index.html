@@ -23,7 +23,7 @@
       const num2 = parseFloat(document.getElementById("num2").value);
       const operacion = document.getElementById("operacion").value;
 
-      const res = await fetch("http://localhost:3000/calcular", {
+      const res = await fetch("http://ec2-100-27-211-46.compute-1.amazonaws.com:3000/calcular", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ num1, num2, operacion }),
